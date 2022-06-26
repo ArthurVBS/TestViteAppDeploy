@@ -1,17 +1,15 @@
-import logo from './logo.svg'
+import { BrowserRouter } from 'react-router-dom'
+import Routes from './routes'
 import './App.css'
-import Count from './components/count'
+import Navbar from './components/navbar'
 
 const App = () => {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <Count />
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes />
+    </BrowserRouter>
   )
 }
 
