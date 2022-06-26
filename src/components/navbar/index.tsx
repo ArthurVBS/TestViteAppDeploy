@@ -7,7 +7,10 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <Link to={PATH + '/'}>HOME</Link>
+      <span>|</span>
       <Link to={PATH + '/contact'}>CONTACT</Link>
+      <span>|</span>
+      <Link to={PATH + '/about'}>ABOUT</Link>
     </nav>
   )
 }
